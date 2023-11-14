@@ -14,7 +14,7 @@ attention: ctrl S avant manip<br>
 
     1 git add .
     2 git comit -m " ajout de <fichier>"
-    3 git psuh
+    3 git push
 
 ### Pour mettre à jour le repository:<br>
 
