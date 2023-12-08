@@ -1,0 +1,7 @@
+installer django
+pour vérifier si django installé : python -m django --version
+créer un projet django : django-admin startproject <nom_projet>
+créer superuser : se placer dans le répertoir <mon_projet> et taper : python manage .py creatsuperuser
+avant de créer le super user faut taper la comande: python manage.py migrate 
+Elle sert à appliquer les modifications de modèle à  la base de données associée à un projet Django.
+finalement on peut se log à notre page django admin en tapant la commande python manage.py runserver
