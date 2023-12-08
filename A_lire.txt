@@ -1,4 +1,4 @@
-installer django
+installer django : pip install django
 pour vérifier si django installé : python -m django --version
 créer un projet django : django-admin startproject <nom_projet>
 créer superuser : se placer dans le répertoir <mon_projet> et taper : python manage .py creatsuperuser

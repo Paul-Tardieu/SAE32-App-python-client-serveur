@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Py-Korp - Suivi de colis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Py-Korp - Suivi de colis</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Rechercher un colis</h2>
+            <form action="/suivi-colis" method="post">
+                <label for="numeroColis">Numéro de colis :</label>
+                <input type="text" id="numeroColis" name="numeroColis" required>
+                <button type="submit">Rechercher</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Résultats de la recherche</h2>
+            <!-- Affichez ici les résultats de la recherche de colis -->
+            <p>Les informations sur le colis seront affichées ici.</p>
+        </section>
+    </main>
+</body>
+
+</html>
