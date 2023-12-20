@@ -1,5 +1,5 @@
 """
-URL configuration for pykorp project.
+URL configuration for pykorp2 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -16,25 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+
 from .views import *
 
-
 urlpatterns = [
-    #page home du site:
-    path('pykorp', pykorp_render),
-
-    #page de suivi des colis:
-    path('pykorp/suivi', suivi_render),
-
-    #page des expéditeurs:
-    path('pykorp/expediteur', expediteur_render),
-
-    #page des transporteurs:
-    path('pykorp//transporteur', transporteur_render),
-
-    #page d'admin:
-    path('pykorp/admin', admin_render),
-
-    #url dynamique:
-    #re_path(r'^pykorp/(?P<ID>\w+)/$', ),
+    path('admin/', admin.site.urls),
+    path('home', suivi_render),
 ]
