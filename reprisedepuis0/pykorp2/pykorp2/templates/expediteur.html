@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Expéditeur</title>
+    <link rel="stylesheet" type="text/css" href="expediteur.css">
+</head>
+<body>
+
+<div class="expediteur-container">
+    <h2>Bienvenue Utilisateur <span id="userId">[ID]</span></h2>
+
+    <div class="console">
+        <label for="consoleInput">Console :</label>
+        <input type="text" id="consoleInput" name="consoleInput">
+        <button onclick="submitConsoleInput()">Envoyer</button>
+    </div>
+
+    <h3>Liste des Colis Envoyés :</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID du Colis</th>
+                <th>Date d'Envoi</th>
+                <th>Destinataire</th>
+                <th>Statut</th>
+            </tr>
+        </thead>
+        <tbody id="colisTableBody">
+            <!-- Les données du tableau seront ajoutées dynamiquement ici -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // Fonction pour simuler l'envoi de la console (à adapter selon les besoins)
+    function submitConsoleInput() {
+        var consoleInput = document.getElementById('consoleInput').value;
+        console.log('Input de la console:', consoleInput);
+        // Ajoutez ici la logique pour traiter l'entrée de la console
+    }
+
+    // Fonction pour initialiser la page avec l'ID utilisateur (à adapter selon les besoins)
+    window.onload = function() {
+        var userId = /* Récupérez l'ID utilisateur de votre système ici */
+        document.getElementById('userId').innerText = userId;
+        // Ajoutez ici la logique pour charger la liste des colis envoyés par l'expéditeur
+        // et remplir le tableau avec les données correspondantes.
+    };
+</script>
+
+</body>
+</html> 

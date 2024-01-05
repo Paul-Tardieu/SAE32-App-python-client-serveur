@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Administrateur</title>
+    <link rel="stylesheet" type="text/css" href="chemin/vers/votre/repertoire/styles.css">
+</head>
+<body>
+
+<div class="admin-container">
+    <h2>Espace Administrateur</h2>
+
+    <div class="console">
+        <label for="consoleInput">Console :</label>
+        <input type="text" id="consoleInput" name="consoleInput">
+        <button onclick="submitConsoleInput()">Envoyer</button>
+    </div>
+
+    <h3>Liste des Utilisateurs :</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom d'utilisateur</th>
+                <th>Email</th>
+                <th>Groupe</th>
+            </tr>
+        </thead>
+        <tbody id="usersTableBody">
+            <!-- Les données de la table des utilisateurs seront ajoutées dynamiquement ici -->
+        </tbody>
+    </table>
+
+    <h3>Liste des Colis par Utilisateur :</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Utilisateur</th>
+                <th>ID du Colis</th>
+                <th>Date d'Envoi</th>
+                <th>Destinataire</th>
+                <th>Statut</th>
+            </tr>
+        </thead>
+        <tbody id="colisTableBody">
+            <!-- Les données de la liste des colis seront ajoutées dynamiquement ici -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // Fonction pour simuler l'envoi de la console (à adapter selon les besoins)
+    function submitConsoleInput() {
+        var consoleInput = document.getElementById('consoleInput').value;
+        console.log('Input de la console:', consoleInput);
+        // Ajoutez ici la logique pour traiter l'entrée de la console
+    }
+
+    // Fonction pour initialiser la page (à adapter selon les besoins)
+    window.onload = function() {
+        // Ajoutez ici la logique pour charger la liste des utilisateurs
+        // et remplir le tableau des utilisateurs et la liste des colis avec les données correspondantes.
+    };
+</script>
+
+</body>
+</html>
